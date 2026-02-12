@@ -1,4 +1,44 @@
 {
-  "name": "ScanCam",
-  "slug": "ScanCam"
+  "expo": {
+    "name": "ScanCam",
+    "slug": "ScanCam",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "myapp",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.rohaansahu.scancam",
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3d1546f0-bea5-4ac9-bfa1-2641d8471560"
+      }
+    }
+  }
 }

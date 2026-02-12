@@ -80,6 +80,11 @@ export default function App() {
           mode={mode}
           facing={facing}
           mute={false}
+          barcodeScannerSettings={{ barcodeTypes: ["qr"]}}
+          onBarcodeScanned={(res)=>{ 
+            alert(res.data);
+            console.log(res.data);
+          }}
           responsiveOrientationWhenOrientationLocked
         />
         <View style={styles.shutterContainer}>
